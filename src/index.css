@@ -1,9 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-body);
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: var(--background-primary-color);
+    color: var(--primary-color);
 }
 
 .header {
@@ -11,7 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #000;
+    background-color: var(--background-tertiary-color);
 }
 
 .header .logo {
@@ -22,9 +22,9 @@ body {
 .header-buttons button {
     margin-left: 10px;
     padding: 10px 20px;
-    background-color: #d9534f;
+    background-color: var(--btn-danger-color);
     border: none;
-    color: #fff;
+    color: var(--primary-color);
     cursor: pointer;
 }
 
@@ -85,7 +85,7 @@ body {
 .footer {
     padding: 20px;
     text-align: center;
-    background-color: #000;
+    background-color: var(--background-tertiary-color);
 }
 
 .footer form {
@@ -103,9 +103,9 @@ body {
 
 .footer button {
     padding: 10px 20px;
-    background-color: #d9534f;
+    background-color: var(--btn-danger-color);
     border: none;
-    color: #fff;
+    color: var(--primary-color);
     cursor: pointer;
 }
 

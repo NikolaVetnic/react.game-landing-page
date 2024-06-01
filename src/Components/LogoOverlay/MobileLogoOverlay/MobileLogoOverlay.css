@@ -1,0 +1,45 @@
+.splash-section-mobile {
+    display: none; /* Hidden by default */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.splash-section-mobile .splash-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.splash-overlay {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 10px;
+}
+
+.game-logo {
+    max-width: 80%;
+    height: auto;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+.platform-logos img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .splash-section-mobile {
+        display: block; /* Show the mobile version */
+        z-index: 1;
+    }
+}

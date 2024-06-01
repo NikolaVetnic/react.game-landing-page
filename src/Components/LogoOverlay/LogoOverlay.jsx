@@ -1,26 +1,21 @@
 import React from "react";
-import "./HeroOverlay.css";
+import "./LogoOverlay.css";
 
-// Import local images
-import gameLogo from "./img/game_logo.png";
-import facebookIcon from "./img/facebook.png";
-import twitterIcon from "./img/twitter.png";
-import discordIcon from "./img/discord.png";
-import windowsLogo from "./img/windows.png";
-import linuxLogo from "./img/linux.png";
-import macosLogo from "./img/macos.png";
+import gameLogo from "../../Images/logo.png";
+import facebookIcon from "../../Images/facebook.png";
+import twitterIcon from "../../Images/twitter.png";
+import discordIcon from "../../Images/discord.png";
+import windowsLogo from "../../Images/windows.png";
+import linuxLogo from "../../Images/linux.png";
+import macosLogo from "../../Images/macos.png";
 
-const HeroOverlay = () => {
+const LogoOverlay = () => {
     return (
-        <div className="hero-overlay">
-            <div className="hero-overlay-inner">
-                <img
-                    src={gameLogo}
-                    alt="Blasphemous II"
-                    className="game-logo"
-                />
+        <div className="flexbox-container">
+            <div className="logo-overlay">
+                <img src={gameLogo} alt="Game Logo" className="game-logo" />
                 <div className="community-section">
-                    <h3>Join the Blasphemous community</h3>
+                    <h3>Join the Game community</h3>
                     <div className="social-icons">
                         <a
                             href="https://facebook.com"
@@ -73,4 +68,4 @@ const HeroOverlay = () => {
     );
 };
 
-export default HeroOverlay;
+export default LogoOverlay;
